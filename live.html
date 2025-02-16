@@ -1,51 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Live Stream</title>
+    <title>بث مباشر - بناء مسجد حي التجنب</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* إعادة ضبط الهوامش والحشوات */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* تنسيق عام للصفحة */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             min-height: 100vh;
-            background-color: #f9f9f9;
+            padding: 20px;
         }
 
+        /* تنسيق الهيدر */
         header {
-            margin: 20px 0;
             text-align: center;
+            margin-bottom: 20px;
+        }
+        img{
+            max-width: 930;
+            max-height: 300;
+        }
+        header img {
+            max-width: 100%;
+            height: auto;
         }
 
-        h1 {
-            font-size: 2rem;
-            color: #333;
-        }
-
+        /* تنسيق حاوية الفيديو */
         .video-container {
             width: 100%;
             max-width: 800px;
-            aspect-ratio: 16/9;
+            aspect-ratio: 16 / 9;
             background: #000;
-            margin: 20px 0;
+            margin-bottom: 20px;
         }
 
-        iframe {
+        .video-container iframe {
             width: 100%;
             height: 100%;
             border: none;
         }
 
+        /* تنسيق الأزرار */
         .button-container {
             margin-top: 20px;
+            text-align: center;
         }
 
-        button {
+        .button-container button {
             background-color: #007bff;
             color: #fff;
             border: none;
@@ -56,14 +71,45 @@
             transition: background-color 0.3s ease;
         }
 
-        button:hover {
+        .button-container button:hover {
             background-color: #0056b3;
         }
+
+        /* تنسيق الصور الإضافية */
+        .additional-images {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .additional-images img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* تحسينات للشاشات الصغيرة */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .video-container {
+                max-width: 100%;
+            }
+
+            .button-container button {
+                width: 100%;
+                padding: 15px;
+            }
+        }
+
+        
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to the Live Stream</h1>
+        <img src="./fdkhj hgls[].PNG" alt="نسبة الإنجاز 70%">
+     
     </header>
 
     <div class="video-container">
@@ -74,8 +120,12 @@
         </iframe>
     </div>
 
+    <div class="additional-images">
+        <img src="./imageaftercha.jpg" alt="نسبة الإنجاز 70%" style="width: 90;">
+    </div>
+
     <div class="button-container">
-        <button onclick="window.location.href='dashboard.html'">Dashboard</button>
+        
     </div>
 </body>
 </html>
